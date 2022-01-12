@@ -65,11 +65,12 @@ address {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
 }
-.footer-social__link:focus,
-.footer-social__link:hover {
-  background-color: var(--accent-color);
-}
+
 .footer-social__social {
   display: block;
   margin-left: 70px;

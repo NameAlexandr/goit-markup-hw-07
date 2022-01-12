@@ -1,16 +1,8 @@
-.clients__text {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-.clients__list {
+.clients {
   display: flex;
   margin-top: 50px;
 }
-.clients__list-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 .clients__link {
@@ -26,10 +18,10 @@
   transition-property: fill, color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__link:hover,
-.clients__link:focus {
-  color: var(--accent-color);
-  fill: currentColor;
-  border: 1px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: currentColor;
+    border: 1px solid var(--accent-color);
+  }
 }

@@ -14,29 +14,35 @@
 <body>
 <!----- навигация ----->
     <header class="header">
-        <div class="container head">
+        <div class="container container__header">
             <a class="header__logo" href=""><span class="header__logo-web">Web</span>Studio</a>
             <nav class="header__nav"> 
-                <ul class="header__site-nav">
-                    <li class="header__item"><a class="header__link current" href="./index.html">Студия</a></li>
-                    <li class="header__item"><a class="header__link  active" href="./portfolio.html">Портфолио</a></li>
-                    <li class="header__item"><a class="header__link" href="">Контакты</a></li>
+                <ul class="site-nav">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link current" href="./index.html">Студия</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link active" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="">
+                            <div class="link-line"></div>Контакты</a>
+                    </li>
                 </ul>
             </nav>
-                <ul class="header__auth-nav">
-                    <li class="header__item">
-                        <a class="header__link" href="mailto:info@devstudio.com">
-                            <svg class="#"  width="16" height="12">
-                                <use href="./Images/symbol-defs.svg#icon-mail"></use>
-                            </svg>info@devstudio.com</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="tel:+380961111111">
-                            <svg class="#"  width="10" height="16">
-                                <use href="./Images/symbol-defs.svg#icon-phone"></use>
-                            </svg>+38 096 111 11 11</a>
-                    </li>
-                </ul>
+            <ul class="auth-nav">
+                <li class="auth-nav__item">
+                    <a class="auth-nav__link" href="mailto:info@devstudio.com">
+                        <svg class="auth-nav__icon"  width="16" height="12">
+                            <use href="./Images/symbol-defs.svg#icon-mail"></use>                                </svg>info@devstudio.com</a>
+                </li>
+                <li class="auth-nav__item">
+                    <a class="auth-nav__link" href="tel:+380961111111">
+                        <svg class="auth-nav__icon"  width="10" height="16">
+                            <use href="./Images/symbol-defs.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
         </div> 
     </header>
 <!--------- портфолио ---------->
@@ -70,9 +76,9 @@
                                             на защищённые сервера конкурентов.
                                         </p>
                                     </div>
-                                    <div class="card-set__card-footer">
-                                        <h2 class="card-set__text">Технокряк</h2>
-                                        <p class="card-set__paragraph">Веб-сайт</p>
+                                    <div class="card-set__thumb">
+                                        <h2 class="card-set__tittle">Технокряк</h2>
+                                        <p class="card-set__text">Веб-сайт</p>
                                     </div>
                                 </a>
                             </article>
@@ -81,9 +87,9 @@
                             <article>
                                 <a class="card-set__link" href="">
                                     <img class="card-set__image" width="370" src="./Images/img2.jpg" alt="Постер New Orlean vs Golden Star">
-                                    <div class="card-set__card-footer">
-                                        <h2 class="card-set__text">Постер New Orlean vs Golden Star</h2>
-                                        <p class="card-set__paragraph">Дизайн</p>
+                                    <div class="card-set__thumb">
+                                        <h2 class="card-set__tittle">Постер New Orlean vs Golden Star</h2>
+                                        <p class="card-set__text">Дизайн</p>
                                     </div>
                                 </a>
                             </article>
@@ -92,9 +98,9 @@
                             <article>
                                 <a class="card-set__link" href="">
                                     <img class="card-set__image" width="370" src="./Images/img3.jpg" alt="Ресторан Seafood">
-                                    <div class="card-set__card-footer">
-                                        <h2 class="card-set__text">Ресторан Seafood</h2>
-                                        <p class="card-set__paragraph">Приложение</p>
+                                    <div class="card-set__thumb">
+                                        <h2 class="card-set__tittle">Ресторан Seafood</h2>
+                                        <p class="card-set__text">Приложение</p>
                                     </div>
                                 </a>
                             </article>
@@ -103,9 +109,9 @@
                             <article>
                                 <a class="card-set__link" href="">
                                     <img class="card-set__image" width="370" src="./Images/img4.jpg" alt="Проект Prime">
-                                    <div class="card-set__card-footer">
-                                        <h2 class="card-set__text">Проект Prime</h2>
-                                        <p class="card-set__paragraph">Маркетинг</p>
+                                    <div class="card-set__thumb">
+                                        <h2 class="card-set__tittle">Проект Prime</h2>
+                                        <p class="card-set__text">Маркетинг</p>
                                     </div>
                                 </a>
                             </article>  
@@ -114,9 +120,9 @@
                             <article>
                                 <a class="card-set__link" href="">
                                     <img class="card-set__image" width="370" src="./Images/img5.jpg" alt="Проект Boxes">
-                                    <div class="card-set__card-footer">
-                                        <h2 class="card-set__text">Проект Boxes</h2>
-                                        <p class="card-set__paragraph">Приложение</p>
+                                    <div class="card-set__thumb">
+                                        <h2 class="card-set__tittle">Проект Boxes</h2>
+                                        <p class="card-set__text">Приложение</p>
                                     </div>
                                 </a>
                             </article>
@@ -125,9 +131,9 @@
                             <article>
                                 <a class="card-set__link" href="">
                                     <img class="card-set__image" width="370" src="./Images/img6.jpg" alt="Inspiration has no Borders">
-                                    <div class="card-set__card-footer">
-                                        <h2 class="card-set__text">Inspiration has no Borders</h2>
-                                        <p class="card-set__paragraph">Веб-сайт</p>
+                                    <div class="card-set__thumb">
+                                        <h2 class="card-set__tittle">Inspiration has no Borders</h2>
+                                        <p class="card-set__text">Веб-сайт</p>
                                     </div>
                                 </a>
                             </article>
@@ -136,9 +142,9 @@
                             <article>
                                 <a class="card-set__link" href="">
                                     <img class="card-set__image" width="370" src="./Images/img7.jpg" alt="Издание Limited Edition">
-                                    <div class="card-set__card-footer">
-                                        <h2 class="card-set__text">Издание Limited Edition</h2>
-                                        <p class="card-set__paragraph">Дизайн</p>
+                                    <div class="card-set__thumb">
+                                        <h2 class="card-set__tittle">Издание Limited Edition</h2>
+                                        <p class="card-set__text">Дизайн</p>
                                     </div>
                                 </a>
                             </article>
@@ -147,9 +153,9 @@
                             <article>
                                 <a class="card-set__link" href="">
                                     <img class="card-set__image" width="370" src="./Images/img8.jpg" alt="Проект LAB">
-                                    <div class="card-set__card-footer">
-                                        <h2 class="card-set__text">Проект LAB</h2>
-                                        <p class="card-set__paragraph">Маркетинг</p>
+                                    <div class="card-set__thumb">
+                                        <h2 class="card-set__tittle">Проект LAB</h2>
+                                        <p class="card-set__text">Маркетинг</p>
                                     </div>
                                 </a>
                             </article>
@@ -158,9 +164,9 @@
                             <article>
                                 <a class="card-set__link" href="">
                                     <img class="card-set__image" width="370" src="./Images/img9.jpg" alt="Growing Business">
-                                    <div class="card-set__card-footer">
-                                        <h2 class="card-set__text">Growing Business</h2>
-                                        <p class="card-set__paragraph">Приложение</p>
+                                    <div class="card-set__thumb">
+                                        <h2 class="card-set__tittle">Growing Business</h2>
+                                        <p class="card-set__text">Приложение</p>
                                     </div>
                                 </a>
                             </article>

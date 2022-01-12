@@ -1,20 +1,11 @@
-.team {
+.section--team-background {
   background-color: var(--secondary-background-color);
 }
 .team__article {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team__team-text {
-  margin-bottom: 50px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-.team__photo {
+.team {
   display: flex;
 }
 .team__card:not(:last-child) {
@@ -24,7 +15,7 @@
   background-color: var(--primary-background-color);
   padding: 30px 0;
 }
-.team__text {
+.team__tittle {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -32,7 +23,7 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.team__paragraph {
+.team__text {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
@@ -40,15 +31,12 @@
   letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
 }
-.team__social-link {
+.social {
   margin-top: 16px;
   display: flex;
   justify-content: center;
 }
-.team__item:not(:last-child) {
-  margin-right: 10px;
-}
-.team__item {
+.social__item {
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -58,8 +46,15 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
-.team__link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,13 +65,9 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team__item:focus,
-.team__item:hover {
-  background-color: var(--accent-color);
-}
-.team__link:focus,
-.team__link:hover {
-  background-color: var(--accent-color);
-  fill: var(--primary-background-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-background-color);
+  }
 }
